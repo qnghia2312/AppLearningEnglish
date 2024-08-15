@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp">
+
+    <EditText
+        android:id="@+id/etWord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Word"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"/>
+
+    <EditText
+        android:id="@+id/etMean"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mean"
+        android:textSize="15sp"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etWord"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"/>
+
+    <EditText
+        android:id="@+id/etPronunciation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Pronunciation"
+        android:textSize="15sp"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etMean"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"/>
+
+    <EditText
+        android:id="@+id/etExample"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Example"
+        android:textSize="15sp"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPronunciation"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"/>
+
+    <EditText
+        android:id="@+id/etTopic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Topic"
+        android:textSize="15sp"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etExample"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"/>
+
+    <EditText
+        android:id="@+id/etType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Type"
+        android:textSize="15sp"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etTopic"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"/>
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/edit_icon"
+        android:contentDescription="Chỉnh sửa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/baseline_cancel_icon"
+        android:contentDescription="Xóa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEdit"/>
+
+    <ImageButton
+        android:id="@+id/btnSave"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/save_icon"
+        android:contentDescription="Lưu"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/btnCancel"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/baseline_cancel_icon"
+        android:contentDescription="Hủy"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSave"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

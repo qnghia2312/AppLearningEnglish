@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.admin.HomeAdmin">
+
+    <SearchView
+        android:id="@+id/searchVocabulary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search vocabulary" />
+
+    <ImageButton
+        android:id="@+id/btnAddVocabulary"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_add"
+        android:contentDescription="Add Vocabulary"
+        android:layout_gravity="end"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVocabulary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

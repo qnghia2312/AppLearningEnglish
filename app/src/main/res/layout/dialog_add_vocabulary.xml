@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Word" />
+
+    <EditText
+        android:id="@+id/etMean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mean" />
+
+    <EditText
+        android:id="@+id/etPronunciation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pronunciation" />
+
+    <EditText
+        android:id="@+id/etExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Example" />
+
+    <EditText
+        android:id="@+id/etTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Topic" />
+
+    <EditText
+        android:id="@+id/etType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginStart="50dp"
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <Button
+            android:layout_marginStart="50dp"
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>
